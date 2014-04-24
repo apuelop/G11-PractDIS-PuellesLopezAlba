@@ -34,45 +34,61 @@
    \section{Introducción}
    
    En este documento presentaremos una paradoja que intenta contradecir
-   el siguiente hecho: un corredor veloz alcanzará a uno lento aunque le dé ventaja.
+   el siguiente hecho: un corredor veloz alcanzará a uno lento aunque le dé ventaja. 
    
+   Definiremos y desmostraremos la Paradoja de Aquiles desde un punto 
+   de vista matemático porque como bien sabemos, mirándolo desde la física 
+   (un corredor muy rápido puede adelantar a uno más lento aunque le de ventaja) 
+   o hipotetizando algunas situaciones que pudieran pasar como que el corredor 
+   lento se quedara sin aliento y abandonara la carrera, el rápido sí que podría ganar 
+   la carrera. Análogamente, también sabemos que el corredor lento podría ganar 
+   la carrera si al corredor rápido le sucediese algún contratiempo. 
    
+   También definiremos y demostraremos su contraparadoja, que dice que el 
+   corredor veloz tiene que conseguir alcanzar en algún punto al lento.
    
    \section{Definición del problema}
    
    Aquiles, conocido como ``el de los pies ligeros" debido a que se le consideraba 
-   el hombre más veloz y el más hábil guerrero, decide participar en una carrera 
-   contra una tortuga. Debido a que Aquiles es mucho más rápido que la tortuga, 
-   decide darle una gran ventaja inicial. Al comienzo de la carrera, 
-   Aquiles recorre en poco tiempo la distancia de ventaja que le había dejado a la tortuga
-   ,pero al llegar descubre que la tortuga ya no está, sino que ha avanzado, más lentamente,
-   un poco más. Muy decidido y con ánimo, sigue corriendo, pero al llegar de nuevo donde estaba la tortuga
-   la última vez que miró, ésta ha avanzado un poco más.
-   
-   En este trabajo demostraremos que Aquiles no ganará la carrera y que 
-   la tortuga estará siempre por delante de él. Esto será demostrado desde un punto de vista matemático
-   porque como bien sabemos, mirándolo desde la física (un corredor muy rápido puede adelantar
-   a uno más lento aunque le de ventaja) o hipotetizando algunas situaciones que pudieran pasar
-   como que la tortuga se quedara sin aliento y abandonara la carrera, Aquiles sí que podría ganar la carrera.
+   el hombre más veloz, decide participar en una carrera contra una tortuga. 
+   Debido a que Aquiles es mucho más rápido, siendo capaz de recorrer 100 m. en 10 segundos, 
+   decide darle una gran ventaja inicial de 100 metros a la tortuga que es diez 
+   veces más lenta que él. 
    
    \section{Demostración}
    
-   \section{Demostración de la falsedad de la hipótesis}
-      
-
-
-
    
+   \begin{figure}[h]
+   \begin{center}
+   \includegraphics[width=8cm]{Imagenes/aquiles2.jpg}
+   \end{center}
+   \caption{Aquiles y la Tortuga}
+   \label{fig:playa}
+   \end{figure}
+   
+   Al comienzo de la carrera, Aquiles recorre en poco tiempo los 100 m. 
+   de ventaja que le había dejado a la tortuga, pero al llegar descubre 
+   que la tortuga ya no está, sino que ha avanzado, más lentamente,
+   10 m. más. Muy decidido y con ánimo, sigue corriendo, pero al alcanzar los 10m.
+   que había avanzado la tortuga, ésta ha avanzado 0'1 m más.  
+   De esta manera, Aquiles nunca consigue ganar la carrera, ya que la tortuga
+   siempre estará por delante de él.  \newline \newline 
+   
+   \section{Demostración de la falsedad de la hipótesis}
+   
+   Es evidente pensar, como hemos comentado en la Introducción del trabajo, que Aquiles
+   debería de alcanzar en algún punto a la tortuga y que por lo tanto, la idea razonada
+   anteriormente es errónea. Gracias a la teoría de límites, 24 siglos después de haber sido
+   razonada la paradoja, se encontró el fallo que escondía, y es que la suposición de que infinitos 
+   trayectos deben sumar una distancia infinita en un tiempo infinito no es correcta.
+      
    \newpage
    
    \begin{thebibliography}{99}
    
       \bibitem{Wikipedia} https://es.wikipedia.org/wiki/Paradojas\_de\_Zenon
+      \bibitem{HistoriaZenon} http://www.catedu.es/matematicas\_mundo/HISTORIA/historia\_Zenon.htm
       
-      \bibitem{paradoja} https://chemazdamundi.wordpress.com/2010/09/07/
-      falacias-economicas-iii-la-importancia-del-lenguaje-matematico-en-la
-      -formulacion-cientifica-economica-la-paradoja-de-auiles-y-la-tortuga-
-      y-la-escuela-de-austria-contrastada-pseudociencia-en-econ/
       
    \end{thebibliography}
   

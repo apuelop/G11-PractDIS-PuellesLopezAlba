@@ -57,6 +57,10 @@
    
    \section{Demostración}
    
+   Al comienzo de la carrera, Aquiles recorre en poco tiempo los 100 m. 
+   de ventaja que le había dejado a la tortuga, pero al llegar descubre 
+   que la tortuga ya no está, sino que ha avanzado, más lentamente,
+   10 m. más. 
    
    \begin{figure}[h]
    \begin{center}
@@ -66,21 +70,67 @@
    \label{fig:playa}
    \end{figure}
    
-   Al comienzo de la carrera, Aquiles recorre en poco tiempo los 100 m. 
-   de ventaja que le había dejado a la tortuga, pero al llegar descubre 
-   que la tortuga ya no está, sino que ha avanzado, más lentamente,
-   10 m. más. Muy decidido y con ánimo, sigue corriendo, pero al alcanzar los 10m.
-   que había avanzado la tortuga, ésta ha avanzado 0'1 m más.  
+   Muy decidido y con ánimo, sigue corriendo, pero al alcanzar los 10m.
+   que había avanzado la tortuga, ésta ha avanzado 0'1 m. más.  
    De esta manera, Aquiles nunca consigue ganar la carrera, ya que la tortuga
-   siempre estará por delante de él.  \newline \newline 
+   siempre estará por delante de él. 
+   
+   A continuación se muestran las distancias recorridas por cada uno de ellos. Podemos
+   comprobar que las distancias recorridas por ambos personajes representan
+   series geométricas.
+   
+   Tomando como referencia la distancia recorrida por la tortuga obtenemos:
+   
+   \begin{equation}
+   Tortuga = 100 + 10 + \frac{1}{10} + \frac{1}{100} + \frac{1}{1000} + ... = 10 \cdot \sum_{n=0}^\infty (\frac{1}{10})^n
+   \end{equation}
+
+   \begin{table}[h]
+   \begin{center}
+   \begin{tabular}{|l|l|l|l|l|}
+   \hline
+                     & \textbf{Pos. Aquiles (m.)} &  \textbf{Pos Tortuga (m.)}  & \textbf{Ventaja (m.)} & \textbf{T (s.)} \\ \hline
+   \textbf{Salida}   & 0                          &  100                        & 100                   & 0                \\ \hline
+   \textbf{1ª etapa} & 100                        &  100 + 10 = 110             & 10                    & 10               \\ \hline
+   \textbf{2ª etapa} & 100 + 10 = 110             &  110 + 1 = 111              & 1                     & 10 + 1 = 11      \\ \hline 
+   \textbf{3ª etapa} & 10 + 1 = 111               &  111 + 0'1 = 111'1          & 0'1                   & 11 + 0'1 = 11'1  \\ \hline 
+   \textbf{...}      & ...                        &  ...                        & ...                   & ...              \\ \hline 
+ 
+   \end{tabular}
+   \end{center}
+   \caption{Tabla de recorrido}
+   \label{tab:ejemplo}
+   \end{table} 
+
+   Como podemos observar, la Tortuga siempre lleva una pequeña ventaja sobre Aquiles, pero, ¿es ésto cierto?,
+   ¿qué pasa cuando la distancia que recorre cada uno tiende a infinito?, 
+   En la siguiente sección veremos que los dos corredores tienen que cruzarse en un mismo punto del recorrido.
    
    \section{Demostración de la falsedad de la hipótesis}
    
-   Es evidente pensar, como hemos comentado en la Introducción del trabajo, que Aquiles
-   debería de alcanzar en algún punto a la tortuga y que por lo tanto, la idea razonada
-   anteriormente es errónea. Gracias a la teoría de límites, 24 siglos después de haber sido
-   razonada la paradoja, se encontró el fallo que escondía, y es que la suposición de que infinitos 
-   trayectos deben sumar una distancia infinita en un tiempo infinito no es correcta.
+   Es evidente pensar, como hemos comentado en la introducción del trabajo, que Aquiles
+   debería de alcanzar en algún punto a la tortuga y que por lo tanto, algo había
+   en aquella idea que no funcionaba. 
+   
+   \begin{figure}[h]
+   \begin{center}
+   \includegraphics[width=8cm]{Imagenes/aquiles-tortuga.jpg}
+   \end{center}
+   \caption{Aquiles y la Tortuga}
+   \label{fig:aquiles}
+   \end{figure} 
+    
+   \newpage
+   
+   No fue hasta 24 siglos después de haber sido razonada la paradoja que, 
+   gracias a la teoría de límites, se encontró el fallo que escondía,
+   y es que la suposición de que infinitos trayectos deben sumar una distancia infinita en 
+   un tiempo infinito no es correcta. Sabiendo ésto, cabe preguntarse lo siguiente,      
+   ¿podemos encontrar un valor L para el cuál la siguiente expresión sea cierta?: 
+   
+   \begin{equation}
+   \lim\limits_{n \rightarrow \infty} 10 \cdot \sum_{n=0}^\infty (\frac{1}{10})^n = L
+   \end{equation}   
       
    \newpage
    
@@ -88,6 +138,7 @@
    
       \bibitem{Wikipedia} https://es.wikipedia.org/wiki/Paradojas\_de\_Zenon
       \bibitem{HistoriaZenon} http://www.catedu.es/matematicas\_mundo/HISTORIA/historia\_Zenon.htm
+      \bibitem{entremateymaticas}http://entremateymaticas.blogspot.com.es/2012/09/y-despues-de-dos-mil-anos.html
       
       
    \end{thebibliography}

@@ -33,17 +33,12 @@
    
    \section{Introducción}
    
-   En este documento presentaremos una paradoja que intenta contradecir
-   el siguiente hecho: un corredor veloz alcanzará a uno lento aunque le dé ventaja. 
+   En este documento presentaremos una de las paradojas de Zenón de Elea, que fue un filósofo griego 
+   nacido en Elea perteneciente a la escuela eleática (c. 490-430 a. C.).  
    
-   Definiremos y desmostraremos la Paradoja de Aquiles desde un punto 
-   de vista matemático porque como bien sabemos, mirándolo desde la física 
-   (un corredor muy rápido puede adelantar a uno más lento aunque le de ventaja) 
-   o hipotetizando algunas situaciones que pudieran pasar como que el corredor 
-   lento se quedara sin aliento y abandonara la carrera, el rápido sí que podría ganar 
-   la carrera. Análogamente, también sabemos que el corredor lento podría ganar 
-   la carrera si al corredor rápido le sucediese algún contratiempo. 
-   
+   Definiremos y desmostraremos la Paradoja de Aquiles y la Tortuga, que intenta contradecir matemáticamente
+   el siguiente hecho: un corredor veloz alcanzará a uno lento aunque le dé ventaja.
+
    También definiremos y demostraremos su contraparadoja, que dice que el 
    corredor veloz tiene que conseguir alcanzar en algún punto al lento.
    
@@ -110,14 +105,14 @@
    
    Es evidente pensar, como hemos comentado en la introducción del trabajo, que Aquiles
    debería de alcanzar en algún punto a la tortuga y que por lo tanto, algo había
-   en aquella idea que no funcionaba. 
+   en la hipótesis de Zenón que no funcionaba. 
    
    \begin{figure}[h]
    \begin{center}
    \includegraphics[width=8cm]{Imagenes/aquiles-tortuga.jpg}
    \end{center}
    \caption{Aquiles y la Tortuga}
-   \label{fig:aquiles}
+   \label{fig:aquiles1}
    \end{figure} 
     
    \newpage
@@ -126,20 +121,56 @@
    gracias a la teoría de límites, se encontró el fallo que escondía,
    y es que la suposición de que infinitos trayectos deben sumar una distancia infinita en 
    un tiempo infinito no es correcta. Sabiendo ésto, cabe preguntarse lo siguiente,      
-   ¿podemos encontrar un valor L para el cuál la siguiente expresión sea cierta?: 
+   ¿podemos encontrar un valor L para el cuál la siguiente expresión converja?: 
    
    \begin{equation}
    \lim\limits_{n \rightarrow \infty} 10 \cdot \sum_{n=0}^\infty (\frac{1}{10})^n = L
    \end{equation}   
+   
+   Partiendo de la serie anterior obtenemos la siguiente expresión:
+   
+   \begin{equation}
+   \lim\limits_{n \rightarrow \infty} a \cdot \frac{(1 - r^n)}{1 - r}
+   \end{equation}
+   
+   Sabemos que el límite cuando -1 $<$ r $<$ 1 es igual a 0 y en nuestro caso, r se encuentra en
+   dicho intervalo (r = $\frac{1}{10}$). Además, sabemos que a = 100. Por tanto, 
+   
+   \begin{equation}
+   \lim\limits_{n \rightarrow \infty} a \cdot \frac{(1 - r^n)}{1 - r} = \frac{a}{1 - r} = \frac{100}{1 - \frac{1}{10}} = 111.11
+   \end{equation}
+   
+   Hemos comprobado que la serie converge y que, por lo tanto, la hipótesis de Zenón era falsa,
+   teniendo que alcanzar Aquiles a la Tortuga a los 111.11 m.
+   
+   En la siguiente gráfica podemos comprobar, como efectivamente, 
+   el límite de la serie tiende a 111.11: \newline
+   
+   \begin{figure}[h]
+   \begin{center}
+   \includegraphics[width=8cm]{Octave/SucesionAquilesyTortuga.png}
+   \end{center}
+   \caption{Serie geométrica}
+   \label{fig:aquiles2}
+   \end{figure} 
       
    \newpage
+   
+   \section{Opinión personal}
+   
+   La realización de este trabajo ha sido muy positiva para mí, ya que he podido aplicar lo visto
+   en clase sobre Git, Latex y Octave, que en mi opinión me será muy útil en un futuro.
+   He elegido este trabajo porque me encantan las matemáticas y, en especial, las paradojas me interesan
+   muchísimo y he pensado que podría aplicar todo lo aprendido en la asignatura para realizarlo.
+   Además, me ha servido también para repasar algunos conceptos matemáticos muy importantes que tenía
+   algo olvidados.
    
    \begin{thebibliography}{99}
    
       \bibitem{Wikipedia} https://es.wikipedia.org/wiki/Paradojas\_de\_Zenon
+      \bibitem{ZenonDeElea} https://es.wikipedia.org/wiki/Zenon\_de\_Elea
       \bibitem{HistoriaZenon} http://www.catedu.es/matematicas\_mundo/HISTORIA/historia\_Zenon.htm
       \bibitem{entremateymaticas}http://entremateymaticas.blogspot.com.es/2012/09/y-despues-de-dos-mil-anos.html
-      
       
    \end{thebibliography}
   

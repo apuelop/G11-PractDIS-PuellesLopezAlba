@@ -33,19 +33,14 @@
    
    \section{Introducción}
    
-   En este documento presentaremos una paradoja que intenta contradecir
-   el siguiente hecho: un corredor veloz alcanzará a uno lento aunque le dé ventaja. 
+   En este documento presentaremos una de las paradojas de Zenón de Elea, que fue un filósofo griego 
+   nacido en Elea perteneciente a la escuela eleática (c. 490-430 a. C.).  
    
-   Definiremos y desmostraremos la Paradoja de Aquiles desde un punto 
-   de vista matemático porque como bien sabemos, mirándolo desde la física 
-   (un corredor muy rápido puede adelantar a uno más lento aunque le de ventaja) 
-   o hipotetizando algunas situaciones que pudieran pasar como que el corredor 
-   lento se quedara sin aliento y abandonara la carrera, el rápido sí que podría ganar 
-   la carrera. Análogamente, también sabemos que el corredor lento podría ganar 
-   la carrera si al corredor rápido le sucediese algún contratiempo. 
-   
-   También definiremos y demostraremos su contraparadoja, que dice que el 
-   corredor veloz tiene que conseguir alcanzar en algún punto al lento.
+   Definiremos y desmostraremos la Paradoja de Aquiles y la Tortuga, que intenta contradecir matemáticamente
+   el siguiente hecho: un corredor veloz alcanzará a uno lento aunque le dé ventaja.
+
+   También definiremos y demostraremos el fallo que había en la paradoja y cuál fue
+   su solución matemática, que surgió siglos después.
    
    \section{Definición del problema}
    
@@ -104,13 +99,13 @@
 
    Como podemos observar, la Tortuga siempre lleva una pequeña ventaja sobre Aquiles, pero, ¿es ésto cierto?,
    ¿qué pasa cuando la distancia que recorre cada uno tiende a infinito?, 
-   En la siguiente sección veremos que los dos corredores tienen que cruzarse en un mismo punto del recorrido.
+   En la siguiente sección veremos que los dos corredores tienen que cruzarse en algún punto del recorrido.
    
    \section{Demostración de la falsedad de la hipótesis}
    
    Es evidente pensar, como hemos comentado en la introducción del trabajo, que Aquiles
    debería de alcanzar en algún punto a la tortuga y que por lo tanto, algo había
-   en aquella idea que no funcionaba. 
+   en la hipótesis de Zenón que no funcionaba. 
    
    \begin{figure}[h]
    \begin{center}
@@ -142,14 +137,13 @@
    dicho intervalo (r = $\frac{1}{10}$). Además, sabemos que a = 100. Por tanto, 
    
    \begin{equation}
-   \lim\limits_{n \rightarrow \infty} S_n = \frac{a}{1 - r} = \frac{100}{1 - \frac{1}{10}} = 111.11
+   \lim\limits_{n \rightarrow \infty} a \cdot \frac{(1 - r^n)}{1 - r} = \frac{a}{1 - r} = \frac{100}{1 - \frac{1}{10}} = 111.11
    \end{equation}
    
    Hemos comprobado que la serie converge y que, por lo tanto, la hipótesis de Zenón era falsa,
    teniendo que alcanzar Aquiles a la Tortuga a los 111.11 m.
    
-   En la siguiente gráfica podemos comprobar, como efectivamente, 
-   el límite de la serie tiende a 111.11: \newline
+   En la siguiente gráfica podemos comprobar, como efectivamente, la serie converje: \newline
    
    \begin{figure}[h]
    \begin{center}
@@ -161,9 +155,19 @@
       
    \newpage
    
+   \section{Opinión personal}
+   
+   La realización de este trabajo ha sido muy positiva para mí, ya que he podido aplicar lo visto
+   en clase sobre Git, Latex y Octave, que en mi opinión me será muy útil en un futuro.
+   He elegido este trabajo porque, a parte de que podía aplicar en él todo lo aprendido en la asignatura,
+   me encantan las matemáticas y, en especial, las paradojas me interesan muchísimo, ya que me hacen pensar un montón.
+   Además, este trabajo ha sido muy positivo porque me ha ayudado a repasar algunos conceptos matemáticos
+   importantes que tenía algo olvidados.
+   
    \begin{thebibliography}{99}
    
       \bibitem{Wikipedia} https://es.wikipedia.org/wiki/Paradojas\_de\_Zenon
+      \bibitem{ZenonDeElea} https://es.wikipedia.org/wiki/Zenon\_de\_Elea
       \bibitem{HistoriaZenon} http://www.catedu.es/matematicas\_mundo/HISTORIA/historia\_Zenon.htm
       \bibitem{entremateymaticas}http://entremateymaticas.blogspot.com.es/2012/09/y-despues-de-dos-mil-anos.html
       
